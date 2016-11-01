@@ -1,0 +1,12 @@
+// 3. 结果
+var ResultList = React.createClass({
+    render() {
+        // 这样就可以循环遍历数组对象到一个变量中
+        const list = this.props.showList.map((item)=><li key={item.id}>{item.id} {item.name}</li>);
+        return (
+            <ul>
+                {list}
+            </ul>
+        )
+    }
+})
